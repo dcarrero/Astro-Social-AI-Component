@@ -1,5 +1,7 @@
 # Usage & configuration
 
+![ShareBar — share + summarize-with-AI buttons](./preview.svg)
+
 `astro-social-ai-component` is a single Astro component (`ShareBar.astro`) plus a data table
 (`platforms.ts`). It renders a compact row of buttons that deep-link the current page to social
 networks and to AI assistants (with a "summarize this article" prompt). Everything is configured

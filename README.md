@@ -7,6 +7,8 @@ below your article content.
 
 Built originally for [carrero.es](https://carrero.es); extracted to be reusable.
 
+![ShareBar — share + summarize-with-AI buttons](docs/preview.svg)
+
 ## What it does
 
 - **Share** to: X (Twitter), LinkedIn, Facebook, WhatsApp, Telegram, Email.
