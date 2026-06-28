@@ -42,7 +42,17 @@ Place it **above** (right below the title) and/or **below** the article body —
 | `lang` | `string` | `'en'` | One of the 25 built-in languages (below). |
 | `strings` | `Partial<Strings>` | — | Override individual strings (see Custom strings). |
 | `heading` | `string \| null` | from `lang` | Override just the heading; `null`/`''` hides it. |
+| `credit` | `boolean` | `true` | Tiny "via Astro AI Component" link back to this project. Set `false` to hide it. |
 | `class` | `string` | — | Extra class on the `<section>`. |
+
+### Credit link
+
+By default the bar shows a small, low-key **"via Astro AI Component"** link to this repo (it helps
+the project — thanks for keeping it!). It's plain text-sized and muted. To remove it:
+
+```astro
+<ShareBar title={title} url={url} credit={false} />
+```
 
 ## Platforms
 

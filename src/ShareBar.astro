@@ -15,6 +15,7 @@ interface Props {
   strings?: Partial<Strings>;    // override any string (heading, shareIn, summarizeIn, via, aiPrompt)
   heading?: string | null;       // override just the heading; null/'' hides it
   via?: boolean;                 // append "via @handle" on X (default true when handle is set)
+  credit?: boolean;              // tiny "via Astro AI Component" attribution link (default true)
   class?: string;
 }
 const {
@@ -25,8 +26,10 @@ const {
   strings,
   heading,
   via = true,
+  credit = true,
   class: extra = '',
 } = Astro.props;
+const CREDIT_URL = 'https://github.com/dcarrero/Astro-Social-AI-Component';
 
 const S: Strings = { ...(STRINGS[lang] || STRINGS.en), ...(strings || {}) };
 const head = heading === undefined ? S.heading : heading;
@@ -49,6 +52,9 @@ const items = platforms.map((k) => PLATFORMS[k]).filter(Boolean);
         {labels && <span class="share-bar__label">{p.label}</span>}
       </a>
     ))}
+    {credit && (
+      <a class="share-bar__credit" href={CREDIT_URL} target="_blank" rel="nofollow noopener" title="Astro Social AI Component — share + summarize with AI">✦ Astro AI</a>
+    )}
   </div>
 </section>
 
@@ -83,6 +89,13 @@ const items = platforms.map((k) => PLATFORMS[k]).filter(Boolean);
   .share-bar__btn.is-ai:hover { background: var(--sb-accent-soft); }
   .share-bar.is-iconly .share-bar__btn { padding: 6px; }
   .share-bar.is-iconly .share-bar__label { display: none; }
+  /* Ghost chip after the last button: a "button but different" so it reads as the component. */
+  .share-bar__credit {
+    display: inline-flex; align-items: center; padding: 5px 8px; border: 1px solid transparent;
+    border-radius: 4px; font-size: 11px; letter-spacing: .04em; color: var(--sb-muted);
+    text-decoration: none; opacity: .8; align-self: stretch;
+  }
+  .share-bar__credit:hover { opacity: 1; color: var(--sb-accent); border-color: var(--sb-border); background: var(--sb-accent-soft); }
   @media (max-width: 520px) {
     .share-bar__label { display: none; }      /* icon-only on phones to stay ~2 lines */
     .share-bar__btn { padding: 6px; }

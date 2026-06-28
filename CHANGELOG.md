@@ -3,6 +3,12 @@
 All notable changes to **astro-social-ai-component**. Format based on
 [Keep a Changelog](https://keepachangelog.com/); versioning [SemVer](https://semver.org/).
 
+## [0.3.0] — 2026-06-28
+
+### Added
+- **`credit` prop** (default `true`): a small, low-key "via Astro AI Component" link back to this
+  repo, shown under the buttons. Set `credit={false}` to hide it. Documented in `docs/USAGE.md`.
+
 ## [0.2.2] — 2026-06-28
 
 ### Removed
