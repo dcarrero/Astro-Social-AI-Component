@@ -47,8 +47,7 @@ Place it **above** (right below the title) and/or **below** the article body —
 ## Platforms
 
 Social: `twitter`, `linkedin`, `facebook`, `whatsapp`, `telegram`, `email`.
-AI: `chatgpt`, `claude`, `gemini`, `perplexity`, `grok`, `deepseek`, `mistral`, `copilot`,
-`google_ai`.
+AI: `chatgpt`, `claude`, `perplexity`, `grok`, `mistral`, `google_ai`.
 
 Default is **all** (interleaved). Pick a subset and order:
 

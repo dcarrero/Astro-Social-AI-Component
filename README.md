@@ -12,9 +12,10 @@ Built originally for [carrero.es](https://carrero.es); extracted to be reusable.
 ## What it does
 
 - **Share** to: X (Twitter), LinkedIn, Facebook, WhatsApp, Telegram, Email.
-- **Summarize with AI** in: ChatGPT, Claude, Gemini, Perplexity, Grok, DeepSeek, Mistral, Copilot,
-  Google AI — each opens the assistant pre-filled with a prompt that asks for a structured summary
-  and **cites your URL as the source**.
+- **Summarize with AI** in: ChatGPT, Claude, Perplexity, Grok, Mistral, Google AI — each opens the
+  assistant pre-filled with a prompt that asks for a structured summary and **cites your URL as the
+  source**. (Assistants whose web chat doesn't prefill from a URL — e.g. Gemini, DeepSeek,
+  Copilot — are intentionally left out; see CHANGELOG.)
 - Everything is **dynamic per page** (title + canonical URL). Pick which platforms appear and in
   what order. Compact by design (icon + short label, ~2 lines; icon-only on phones).
 

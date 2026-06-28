@@ -3,6 +3,16 @@
 All notable changes to **astro-social-ai-component**. Format based on
 [Keep a Changelog](https://keepachangelog.com/); versioning [SemVer](https://semver.org/).
 
+## [0.2.2] — 2026-06-28
+
+### Removed
+- **DeepSeek, Gemini and Copilot** dropped from the platform table and defaults: their web chats
+  do not (no longer) prefill the prompt from a URL — DeepSeek has no deep-link param, Gemini needs
+  a browser extension to inject the text, and Copilot's `?q=` was disabled in Jan 2026 (the
+  "Reprompt" security mitigation). Their buttons arrived empty. Now **12 platforms** (6 social +
+  6 AI: ChatGPT, Claude, Perplexity, Grok, Mistral, Google AI). They'll be re-added if/when those
+  assistants support a deep-link prompt again.
+
 ## [0.2.1] — 2026-06-28
 
 ### Docs
