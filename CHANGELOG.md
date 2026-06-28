@@ -3,6 +3,13 @@
 All notable changes to **astro-social-ai-component**. Format based on
 [Keep a Changelog](https://keepachangelog.com/); versioning [SemVer](https://semver.org/).
 
+## [0.2.1] — 2026-06-28
+
+### Docs
+- `docs/preview.svg`: preview now shows **all 15 supported platforms** with the **English**
+  heading ("Share or summarize with AI"), matching the package's default language. The heading is
+  localized for all 25 languages and can be hidden with `heading={null}`.
+
 ## [0.2.0] — 2026-06-28
 
 ### Added

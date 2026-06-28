@@ -1,6 +1,6 @@
 {
   "name": "astro-social-ai-component",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Compact share + \"summarize with AI\" bar for Astro: deep-links posts to social networks and AI assistants (ChatGPT, Claude, Gemini, Perplexity, Grok, DeepSeek, Mistral, Copilot, Google AI). Self-contained, themable, dependency-free.",
   "type": "module",
   "license": "MIT",
