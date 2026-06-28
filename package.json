@@ -1,0 +1,17 @@
+{
+  "name": "astro-social-ai-component",
+  "version": "0.2.0",
+  "description": "Compact share + \"summarize with AI\" bar for Astro: deep-links posts to social networks and AI assistants (ChatGPT, Claude, Gemini, Perplexity, Grok, DeepSeek, Mistral, Copilot, Google AI). Self-contained, themable, dependency-free.",
+  "type": "module",
+  "license": "MIT",
+  "author": "David Carrero Fernández-Baillo (https://carrero.es)",
+  "keywords": ["astro", "astro-component", "share", "social", "ai", "chatgpt", "claude", "summarize", "share-buttons"],
+  "files": ["src", "README.md", "CHANGELOG.md", "LICENSE"],
+  "exports": {
+    "./ShareBar.astro": "./src/ShareBar.astro",
+    "./platforms": "./src/platforms.ts"
+  },
+  "peerDependencies": {
+    "astro": ">=4.0.0"
+  }
+}
